@@ -12,3 +12,5 @@ module.exports = {
     },
   },
 };
+
+//Deployed contract address => 0x2af685540c3c052881d5A164B391c0daecF6055E
