@@ -30,7 +30,7 @@ const Navbar = ({ showSidebar, setShowSidebar }) => {
               </svg>
             </button>
             <Link to="/" className="flex ml-3 md:mr-24">
-              <img src={logo} className="h-10 mr-3" alt="Twitter Logo" />
+              <img src={logo} className="h-8 mr-3" alt="Twitter Logo" />
             </Link>
           </div>
           <div className="flex items-center">

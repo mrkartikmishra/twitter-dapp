@@ -1,17 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Cube, Cog, User, Trending } from "@web3uikit/icons";
-import { Link } from "react-router-dom";
 
 const Leftbar = ({ showSidebar }) => {
   return (
     <>
       <aside
-        id="logo-sidebar"
         className={`fixed top-0 left-0 z-40 flex flex-col justify-between w-52 h-screen pt-20 transition-transform ${
           showSidebar ? "-translate-x-full" : "translate-x-0"
         } border-r sm:translate-x-0 bg-gray-800 border-gray-700`}
-        aria-label="Sidebar"
       >
         <div className="h-full px-3 pb-4 overflow-y-auto bg-gray-800">
           <ul className="space-y-2 font-medium">
@@ -26,7 +24,7 @@ const Leftbar = ({ showSidebar }) => {
             </li>
             <li>
               <Link
-                to={"/"}
+                to={"/trending"}
                 className="flex items-center p-2  rounded-lg text-white hover:bg-primary group"
               >
                 <Trending fontSize={30} />
